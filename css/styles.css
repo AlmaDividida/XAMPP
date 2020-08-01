@@ -107,6 +107,13 @@ img {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .contenido-header {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+}
+
 .logo {
     display: flex;
     justify-content: space-between;
@@ -122,7 +129,7 @@ img {
     text-align: center;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .main-site {
         display: block;
     }
