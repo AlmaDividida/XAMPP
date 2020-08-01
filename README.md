@@ -1,2 +1,0 @@
-# XAMPP
-Pagina Web XAMPP
