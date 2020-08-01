@@ -1,0 +1,183 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+/* GLOBALES */
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* UTILIDADES */
+
+.responsive-img {
+    width: 100%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.seccion {
+    margin-top: 4rem;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgb(240, 145, 57);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+
+/* HEADER */
+
+.site-header {
+    background-color: #2b2b2b;
+}
+
+.navegacion a,
+.site-header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.navegacion a {
+    font-size: 2rem;
+}
+
+.navegacion a:hover {
+    color: rgb(240, 145, 57);
+    transition: .5s;
+}
+
+.site-header img {
+    width: 12rem;
+}
+
+.site-header a:last-of-type {
+    margin-right: 0;
+}
+
+.contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MAIN */
+
+.main-site {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5rem;
+    text-align: center;
+}
+
+@media (max-width: 780px) {
+    .main-site {
+        display: block;
+    }
+}
+
+.main-site img {
+    width: 60%;
+}
+
+
+/* PARALLAX */
+
+.fondo-parallax {
+    height: 40rem;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-parallax,
+.contenido-parallax a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+/* DESCARGAS */
+
+.descargas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50rem;
+}
+
+.descarga {
+    flex-basis: calc(33.3% - 5rem);
+    text-align: center;
+    color: rgb(240, 145, 57);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background: #2b2b2b;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10rem;
+}
